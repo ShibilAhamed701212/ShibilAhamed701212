@@ -4,7 +4,9 @@
 
 Welcome to my GitHub! I am deeply interested in software development, problem-solving, and building intelligent applications that leverage machine learning and cloud computing. 
 
+<!-- Dashboard link hidden until the GitHub Pages site is published (https://shibilahamed701212.github.io/dashboard/ currently returns 404):
 🚀 **[Click here to view my Interactive Developer Dashboard](https://shibilahamed701212.github.io/dashboard/)**
+-->
 
 ---
 
@@ -36,13 +38,13 @@ Welcome to my GitHub! I am deeply interested in software development, problem-so
 * **[Library_DBMS](https://github.com/ShibilAhamed701212/Library_DBMS)**  
   A next-gen Library Database Management System featuring AI discovery, real-time chat, and gamification built with Flask, MySQL, and Socket.IO.
   
-* **[LeaseGuardAI](https://github.com/ShibilAhamed701212/LeaseGuardAI)**  
+* **[LeaseGuardAI](https://github.com/ShibilAhamed701212/LeaseGuardAI-Agent)**  
   An AI-powered auto lease analyzer using OCR, fairness scoring, and specialized negotiation coaching—designed with absolute data privacy in mind.
 
 * **[AI Habit Tracker](https://github.com/ShibilAhamed701212/ai-habit-tracker)**  
   A smart habit tracker providing AI-powered weekly insights, streak recovery plans, and a custom chat interface based on your habit history.
 
-* **[React Native Offline Face Auth](https://github.com/ShibilAhamed701212/react-native-offline-face-auth)**  
+* **[React Native Offline Face Auth](https://github.com/OpenForgeStack/react-native-offline-face-auth)**  
   A lightweight Edge AI SDK for offline facial authentication, liveness detection, and GPS verification optimized for low-resource mobile environments.
 
 ---
