@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero-3d.svg" alt="Shibil Ahamed — animated 3D orbit of AI nodes" width="100%" />
+<img src="assets/hero-3d-v2.svg" alt="Shibil Ahamed — animated 3D orbit of AI nodes" width="100%" />
 
 <br/>
 
