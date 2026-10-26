@@ -56,11 +56,23 @@
   <g class="fade-up d2">
     <text x="62" y="188" font-size="16" fill="#94a3b8">LLM &amp; RAG systems · Computer Vision · MLOps</text>
   </g>
+  <!-- left: rotating 3D wireframe cube -->
   <g class="fade-up d3">
-    <rect x="62" y="216" width="176" height="32" rx="16" fill="none" stroke="#38bdf8" stroke-opacity="0.6"/>
-    <text x="150" y="237" font-size="13" fill="#7dd3fc" text-anchor="middle">Campus Lead · OSCI</text>
-    <rect x="252" y="216" width="186" height="32" rx="16" fill="none" stroke="#f472b6" stroke-opacity="0.6"/>
-    <text x="345" y="237" font-size="13" fill="#f9a8d4" text-anchor="middle">Open to internships</text>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 150 250;360 150 250" dur="14s" repeatCount="indefinite"/>
+      <g stroke="#38bdf8" stroke-width="1.5" fill="none" stroke-opacity="0.85">
+        <rect x="125" y="225" width="50" height="50" rx="4"/>
+        <rect x="143" y="207" width="50" height="50" rx="4" stroke="#a78bfa"/>
+        <path d="M125 225 L143 207 M175 225 L193 207 M175 275 L193 257 M125 275 L143 257" stroke="#f472b6"/>
+      </g>
+      <g fill="#38bdf8">
+        <circle cx="125" cy="225" r="2.5"/>
+        <circle cx="175" cy="225" r="2.5"/>
+        <circle cx="175" cy="275" r="2.5"/>
+        <circle cx="125" cy="275" r="2.5"/>
+      </g>
+    </g>
+    <circle cx="150" cy="250" r="3" fill="#f472b6" class="pulse"/>
   </g>
 
   <!-- right: 3D orbit -->
