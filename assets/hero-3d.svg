@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="960" height="320" role="img" aria-label="Animated 3D orbit of AI, ML and cloud nodes">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#14112e"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="0.5" stop-color="#6d28d9"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <style>
+    text { font-family: 'Segoe UI', Inter, Helvetica, Arial, sans-serif; }
+    .spin-slow { transform-box: view-box; transform-origin: 700px 160px; animation: spin 24s linear infinite; }
+    .spin-rev  { transform-box: view-box; transform-origin: 700px 160px; animation: spin 16s linear infinite reverse; }
+    .tilt      { transform-box: view-box; transform-origin: 700px 160px; animation: wobble 8s ease-in-out infinite; }
+    .pulse     { transform-box: fill-box; transform-origin: center; animation: pulse 3s ease-in-out infinite; }
+    .fade-up   { opacity: 0; animation: fadeUp 1.2s ease-out forwards; }
+    .d1 { animation-delay: .2s; }
+    .d2 { animation-delay: .5s; }
+    .d3 { animation-delay: .8s; }
+    @keyframes spin   { to { transform: rotate(360deg); } }
+    @keyframes wobble { 0%,100% { transform: rotate(-18deg); } 50% { transform: rotate(12deg); } }
+    @keyframes pulse  { 0%,100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.15); opacity: .5; } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) {
+      .spin-slow, .spin-rev, .tilt, .pulse { animation: none; }
+    }
+  </style>
+
+  <!-- background card -->
+  <rect width="960" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="700" cy="160" r="150" fill="url(#glow)"/>
+
+  <!-- left: name and roles -->
+  <g class="fade-up">
+    <text x="60" y="118" font-size="52" font-weight="700" fill="url(#title)">Shibil Ahamed</text>
+  </g>
+  <g class="fade-up d1">
+    <text x="62" y="158" font-size="20" fill="#e2e8f0">AI/ML Engineer in the making</text>
+  </g>
+  <g class="fade-up d2">
+    <text x="62" y="188" font-size="16" fill="#94a3b8">LLM &amp; RAG systems · Computer Vision · MLOps</text>
+  </g>
+  <g class="fade-up d3">
+    <rect x="62" y="216" width="176" height="32" rx="16" fill="none" stroke="#38bdf8" stroke-opacity="0.6"/>
+    <text x="150" y="237" font-size="13" fill="#7dd3fc" text-anchor="middle">Campus Lead · OSCI</text>
+    <rect x="252" y="216" width="186" height="32" rx="16" fill="none" stroke="#f472b6" stroke-opacity="0.6"/>
+    <text x="345" y="237" font-size="13" fill="#f9a8d4" text-anchor="middle">Open to internships</text>
+  </g>
+
+  <!-- right: 3D orbit -->
+  <g class="tilt">
+    <ellipse cx="700" cy="160" rx="230" ry="78" fill="none" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="4 6"/>
+  </g>
+  <g class="spin-slow">
+    <ellipse cx="700" cy="160" rx="200" ry="62" fill="none" stroke="#a78bfa" stroke-opacity="0.4" stroke-width="1.5" transform="rotate(-14 700 160)"/>
+    <circle r="9" fill="#38bdf8" filter="url(#blur)" opacity="0.7">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M 500 160 A 200 62 0 1 0 900 160 A 200 62 0 1 0 500 160"/>
+    </circle>
+    <circle r="7" fill="#38bdf8">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M 500 160 A 200 62 0 1 0 900 160 A 200 62 0 1 0 500 160"/>
+    </circle>
+  </g>
+  <g class="spin-rev">
+    <ellipse cx="700" cy="160" rx="160" ry="110" fill="none" stroke="#f472b6" stroke-opacity="0.35" stroke-width="1.5" transform="rotate(22 700 160)"/>
+    <circle r="6" fill="#f472b6">
+      <animateMotion dur="7s" repeatCount="indefinite" path="M 540 160 A 160 110 0 1 0 860 160 A 160 110 0 1 0 540 160"/>
+    </circle>
+    <circle r="5" fill="#fbbf24">
+      <animateMotion dur="11s" repeatCount="indefinite" begin="-3s" path="M 540 160 A 160 110 0 1 0 860 160 A 160 110 0 1 0 540 160"/>
+    </circle>
+  </g>
+
+  <!-- core sphere -->
+  <circle class="pulse" cx="700" cy="160" r="58" fill="url(#orb)"/>
+  <circle cx="700" cy="160" r="58" fill="none" stroke="#c4b5fd" stroke-opacity="0.35"/>
+  <text x="700" y="167" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">AI</text>
+</svg>
