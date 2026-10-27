@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero-v4.svg" alt="Shibil Ahamed — portrait" width="100%" />
+<img src="assets/hero-v5.svg" alt="Shibil Ahamed — portrait" width="100%" />
 
 <br/>
 
