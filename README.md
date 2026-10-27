@@ -52,8 +52,7 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ShibilAhamed701212&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0b1020&count_private=true" alt="GitHub stats" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShibilAhamed701212&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b1020" alt="Top languages" width="49%" />
+<img src="assets/github-3d.svg" alt="GitHub activity: 395 contributions in the last year as a 3D skyline, with commits, pull requests, repositories and top languages" width="100%" />
 
 </div>
 
