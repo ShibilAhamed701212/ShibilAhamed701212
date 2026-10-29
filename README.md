@@ -52,7 +52,7 @@
 
 <div align="center">
 
-<img src="assets/github-3d.svg?v=20261028" alt="GitHub activity: 395 contributions in the last year as a 3D skyline, with commits, pull requests, repositories and top languages" width="100%" />
+<img src="assets/github-3d.svg?v=20261029" alt="GitHub activity: 395 contributions in the last year as a 3D skyline, with commits, pull requests, repositories and top languages" width="100%" />
 
 </div>
 
